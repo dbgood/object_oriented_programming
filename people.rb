@@ -1,14 +1,12 @@
 class Person
-		def initialize(name)
-			@name = name
-		end
+	def initialize(name)
+		@name = name
+	end
 
-		def greeting
-			"Hi, my name is #{@name}"
-		end
-
-
-
+	def greeting
+		"Hi, my name is #{@name}"
+	end
+end
 
 
 class Student < Person
@@ -17,24 +15,26 @@ class Student < Person
 	end
 end
 
-	class Instructor < Person
-		def teach
-			puts "Everything in Ruby is an object"
+class Instructor < Person
+	def teach
+		puts "Everything in Ruby is an object"
 
-		end
 	end
+end
 
-person1 = Instructor.new("Chris")
-puts person1.greeting
+# person1 = Instructor.new("Chris")
+# puts person1.greeting
 
-person2 = Student.new("Christina")
-puts person2.greeting
+# person2 = Student.new("Christina")
+# puts person2.greeting
 
-person1.teach
-person2.learn
-person2.teach
+# person1.teach
+# person2.learn
+# person2.teach
 
 #The top method did not work because the student cant teach
+
+
 
 
 
